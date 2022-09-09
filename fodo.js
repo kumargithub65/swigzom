@@ -14,7 +14,8 @@ import addrecipeview from "./addrecipeview.js"
 //   module.hot.accept()
 // }
 
-console.log("welcome")
+console.log("welcomes")
+
 
 const controlrecipe =  async function () {
   try {
