@@ -13,7 +13,7 @@ return this.renderError();
 
 
   this._data = data
-  console.log(this._data)
+
   let markup = this._generatemarkup()
   this.clear()
   this._parentel.insertAdjacentHTML("afterbegin",markup)

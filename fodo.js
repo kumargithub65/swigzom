@@ -14,7 +14,7 @@ import addrecipeview from "./addrecipeview.js"
 //   module.hot.accept()
 // }
 
-console.log("welcomes")
+console.log("happy to see you here")
 
 
 const controlrecipe =  async function () {
@@ -109,9 +109,9 @@ const controlBookmarker = function() {
 const controladdrecipe = async function(recipe){
   try{
     addrecipeview.renderspinner()
-  console.log(recipe)
+
 await  model.uploadrecipe(recipe)
-console.log(model.state.recipe)
+
 
 recipeview.render(model.state.recipe)
 
@@ -122,7 +122,7 @@ bookMarkview.render(model.state.bookmark)
 //   addrecipeview.toggleWindow()
 // },2500)
   }catch(err){
-    console.log(err)
+
 
     addrecipeview.renderError(err.message)
   }

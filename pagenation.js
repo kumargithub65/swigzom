@@ -15,7 +15,7 @@ this._parentel.addEventListener("click",function(e){
         let btn = e.target.closest(".btn--inline")
         if(!btn) return
                let gotopage =    +btn.dataset.goto 
-          console.log(gotopage)
+         
         handle(gotopage)
   })
 

@@ -92,7 +92,7 @@ addhandlerender(handle){
 
 
   addservinghandler(handle){
-    console.log(this._parentel)
+
 this._parentel.addEventListener("click",function(e){
 
 let btn = e.target.closest(".btn--update-servings")
@@ -111,7 +111,7 @@ addbookmarkhandler(handle){
 this._parentel.addEventListener("click",function(e){
  let btn =  e.target.closest(".btn--bookmark")
  if(!btn) return 
-console.log(btn)
+
 handle()
 
 })
@@ -119,7 +119,7 @@ handle()
 
 
   _generatemarkup(){
-    console.log(this._data)
+
   
   return  `
   

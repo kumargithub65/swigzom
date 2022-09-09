@@ -123,7 +123,7 @@ function init (){
     let storage = localStorage.getItem("storing");
     if (storage){
              state.bookmark = JSON.parse(storage)
-             console.log(state.bookmark)
+      
     }
  
 }

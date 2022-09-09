@@ -11,7 +11,7 @@ class resultsview extends view {
 
 
 _generatemarkup(){
-console.log("gerfating")
+
   return this._data.map(this._generatemarkupPrieview).join("")
 
  
@@ -19,8 +19,7 @@ console.log("gerfating")
 
 _generatemarkupPrieview(result){
   let id = window.location.hash.slice(1)
-  console.log(result)
-  console.log(id)
+
   return `
   <li class="preview">
     <a class="preview__link  ${result.id === id ? "preview__link--active" :''}"  href="#${result.id}">
